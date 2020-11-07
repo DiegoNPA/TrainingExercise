@@ -5,7 +5,7 @@
       <div class="card-body text-info">
         <img src="{{user.avatar_url}}" alt="User Avatar" class="img-circle img-responsive" height="100" width="100">
         <h5 class="card-title">GitHub Profile: <a href={{user.html_url}} target="_blank">{{user.html_url}}</a></h5>
-        <button class="btn btn-primary">Repositories</button>
+        <button class="btn btn-primary" (click)="onRedirect(user)">Repositories</button>
       </div>
     </div>
   </div>

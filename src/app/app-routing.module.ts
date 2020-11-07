@@ -5,7 +5,7 @@ import { ReposComponent } from './components/repos/repos.component';
 
 const routes: Routes = [
   { path: '', component: UsersComponent },
-  { path: 'users/:userId/repos', component: ReposComponent }
+  { path: 'users/:userLogin/repos', component: ReposComponent }
 ];
 
 @NgModule({
