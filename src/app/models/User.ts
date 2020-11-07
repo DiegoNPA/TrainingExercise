@@ -1,5 +1,5 @@
 export class User {
-  userName: string;
-  gitHubLink: string;
-  avatar: string;
+  login: string;
+  html_url: string;
+  avatar_url: string;
 }

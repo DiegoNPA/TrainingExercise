@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { User } from '../../models/User';
+import { UsersService } from '../../services/users.service';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-user-item',
@@ -7,9 +11,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserItemComponent implements OnInit {
 
-  constructor() { }
+  @Input() user: User;
+
+  constructor(private usersService: UsersService, private router: Router) { }
 
   ngOnInit(): void {
+
+    console.log(this.user);
+
   }
 
 }

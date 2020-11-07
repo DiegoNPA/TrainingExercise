@@ -1,1 +1,12 @@
-<p>user-item works!</p>
+<div class="container">
+  <div class="row">
+    <div class="card border-info mb-3" style="max-width: 18rem;">
+      <div class="card-header">Username: {{user.login}}</div>
+      <div class="card-body text-info">
+        <img src="{{user.avatar_url}}" alt="User Avatar" class="img-circle img-responsive" height="100" width="100">
+        <h5 class="card-title">GitHub Profile: <a href={{user.html_url}} target="_blank">{{user.html_url}}</a></h5>
+        <button class="btn btn-primary">Repositories</button>
+      </div>
+    </div>
+  </div>
+</div>
