@@ -1,8 +1,8 @@
 export class Repo {
-  repoLink: string;
-  directoryName: string;
+  html_url: string;
+  name: string;
   description: string;
   issues: number;
-  openIssues: number;
-  forks: number;
+  open_issues: number;
+  forks_count: number;
 }
