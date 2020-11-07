@@ -6,12 +6,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UsersComponent } from './components/users/users.component';
 import { UserItemComponent } from './components/user-item/user-item.component';
+import { ReposComponent } from './components/repos/repos.component';
+import { RepoItemComponent } from './components/repo-item/repo-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UsersComponent,
-    UserItemComponent
+    UserItemComponent,
+    ReposComponent,
+    RepoItemComponent
   ],
   imports: [
     BrowserModule,
