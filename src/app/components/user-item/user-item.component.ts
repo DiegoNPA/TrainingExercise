@@ -16,9 +16,17 @@ export class UserItemComponent implements OnInit {
   constructor(private usersService: UsersService, private router: Router) { }
 
   ngOnInit(): void {
+  }
 
-    console.log(this.user);
-
+  onRedirect(user){
+    this.usersService.getRepos(user.login).subscribe(repos => {
+      const reps = repos;
+      if(reps[0]){
+        this.router.navigateByUrl(`/users/${user.login}/repos`)
+      }else(
+        this.router.navigateByUrl(`/norepos`)
+      )
+    })
   }
 
 }

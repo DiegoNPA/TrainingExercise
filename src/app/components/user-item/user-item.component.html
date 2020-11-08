@@ -1,12 +1,15 @@
-<div class="container">
-  <div class="row">
-    <div class="card border-info mb-3" style="max-width: 18rem;">
-      <div class="card-header">Username: {{user.login}}</div>
-      <div class="card-body text-info">
-        <img src="{{user.avatar_url}}" alt="User Avatar" class="img-circle img-responsive" height="100" width="100">
-        <h5 class="card-title">GitHub Profile: <a href={{user.html_url}} target="_blank">{{user.html_url}}</a></h5>
-        <button class="btn btn-primary">Repositories</button>
-      </div>
-    </div>
+<div id="cards" style=" height: 30rem;" class="card">
+  <div class="view overlay">
+    <img class="card-img-top" src="{{user.avatar_url}}" alt="User Avatar">
+  </div>
+  <div class="card-body elegant-color white-text rounded-bottom">
+    <h4 class="card-title">Username: {{user.login}}</h4>
+    <hr class="hr-light">
+    <p class="card-text white-text mb-4">GitHub Profile: <a href={{user.html_url}} target="_blank">{{user.html_url}}</a>
+      <br>
+      <br>
+    <button (click)="onRedirect(user)" class="white-text d-flex justify-content-end">
+      <h5>Repositories<i class="fas fa-angle-double-right"></i></h5>
+    </button>
   </div>
 </div>

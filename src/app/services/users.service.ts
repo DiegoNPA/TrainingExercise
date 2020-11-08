@@ -23,5 +23,8 @@ export class UsersService {
   getUsers(): Observable<User[]>{
     return this.http.get<User[]>(this.apiUrl);
   }
-  
+
+  getRepos(userLogin): Observable<Repo[]>{
+    return this.http.get<Repo[]>(this.apiUrl+`/${userLogin}/repos`);
+  }
 }
