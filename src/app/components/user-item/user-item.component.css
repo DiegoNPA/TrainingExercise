@@ -1,3 +1,7 @@
-img {
-  border-radius: 50%;
+#cards {
+  margin: 20px;
+}
+
+#image{
+  margin-top: 20;
 }

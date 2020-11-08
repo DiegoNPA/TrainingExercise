@@ -8,6 +8,7 @@ import { UsersComponent } from './components/users/users.component';
 import { UserItemComponent } from './components/user-item/user-item.component';
 import { ReposComponent } from './components/repos/repos.component';
 import { RepoItemComponent } from './components/repo-item/repo-item.component';
+import { NoReposComponent } from './components/no-repos/no-repos.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { RepoItemComponent } from './components/repo-item/repo-item.component';
     UsersComponent,
     UserItemComponent,
     ReposComponent,
-    RepoItemComponent
+    RepoItemComponent,
+    NoReposComponent
   ],
   imports: [
     BrowserModule,

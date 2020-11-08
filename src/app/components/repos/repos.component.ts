@@ -19,7 +19,7 @@ export class ReposComponent implements OnInit {
     const userLogin = this.Route.snapshot.paramMap.get('userLogin');
     this.usersService.getRepos(userLogin).subscribe(repos => {
       this.repos = repos;
-      console.log(repos);
+      // console.log(repos);
     })
   }
 

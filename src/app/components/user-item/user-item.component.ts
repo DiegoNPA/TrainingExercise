@@ -19,7 +19,14 @@ export class UserItemComponent implements OnInit {
   }
 
   onRedirect(user){
-    this.router.navigateByUrl(`/users/${user.login}/repos`)
+    this.usersService.getRepos(user.login).subscribe(repos => {
+      const reps = repos;
+      if(reps[0]){
+        this.router.navigateByUrl(`/users/${user.login}/repos`)
+      }else(
+        this.router.navigateByUrl(`/norepos`)
+      )
+    })
   }
 
 }

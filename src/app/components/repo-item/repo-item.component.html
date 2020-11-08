@@ -1,21 +1,12 @@
-<div class="container">
-  <div class="row">
-    <div class="card border-info mb-3" style="max-width: 18rem;">
-      <div class="card-header">Repository name: {{repo.name}}</div>
-      <div class="card-body text-info">
-        <div class="text-justify">
-          Description: {{repo.description}}
-        </div>
-        <br>
-        <h6 class="card-title">GitHub link: <a href={{repo.html_url}} target="_blank">{{repo.html_url}}</a></h6>
-        <br>
-        <div class="alert alert-secondary">
-          Open issues: {{repo.open_issues}}
-        </div>
-        <div class="alert alert-success">
-          Forks: {{repo.forks_count}}
-        </div>
-      </div>
+<div id="cards" style=" height: 36rem; width: 17rem;" class="card">
+  <div class="card-body elegant-color white-text rounded-bottom">
+    <h4 class="card-title">Repository name: {{repo.name}}</h4>
+    <hr class="hr-light">
+    <p class="card-text white-text mb-4">Description: {{repo.description}}</p>
+    <p class="card-text white-text mb-4">GitHub link: <a href={{repo.html_url}} target="_blank">{{repo.html_url}}</a></p>
+    <div class="mt-auto">
+      <span id="label" class="badge badge-pill badge-danger">Open issues: {{repo.open_issues}}</span>
+      <span id="label" class="badge badge-pill badge-success">Forks: {{repo.forks_count}}</span>
     </div>
   </div>
 </div>
